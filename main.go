@@ -16,7 +16,7 @@ func init() {
 	var err error
 
 	if os.Getenv("ENV") == "DEV" {
-		err := godotenv.Load()
+		err = godotenv.Load()
 		if err != nil {
 			log.Fatal("Failed to load")
 		}
